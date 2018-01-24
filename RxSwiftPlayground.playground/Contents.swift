@@ -1,9 +1,9 @@
 //: Please build the scheme 'RxSwiftPlayground' first
 import RxSwift
 
-example(of: "never") {
+example(of: "of") {
   
-  let observable = Observable<Any>.never()
+  let observable = Observable<Float>.of(1.234, 7)
   
   observable
     .subscribe(
